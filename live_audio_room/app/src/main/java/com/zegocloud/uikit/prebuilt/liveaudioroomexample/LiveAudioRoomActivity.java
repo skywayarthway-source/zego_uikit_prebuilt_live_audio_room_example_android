@@ -4,6 +4,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.zegocloud.uikit.prebuilt.liveaudioroom.ZegoUIKitPrebuiltLiveAudioRoomConfig;
 import com.zegocloud.uikit.prebuilt.liveaudioroom.ZegoUIKitPrebuiltLiveAudioRoomFragment;
+import com.zegocloud.uikit.prebuilt.liveaudioroom.core.ZegoMenuBarButtonName;
 
 public class LiveAudioRoomActivity extends AppCompatActivity {
 
@@ -28,6 +29,7 @@ public class LiveAudioRoomActivity extends AppCompatActivity {
         } else {
             config = ZegoUIKitPrebuiltLiveAudioRoomConfig.audience();
         }
+        config.bottomMenuBarConfig.hostButtons.add(ZegoMenuBarButtonName.SWITCH_AUDIO_OUTPUT_BUTTON);
 
         ZegoUIKitPrebuiltLiveAudioRoomFragment fragment = ZegoUIKitPrebuiltLiveAudioRoomFragment.newInstance(appID,
             appSign, userID, userName, roomID, config);
