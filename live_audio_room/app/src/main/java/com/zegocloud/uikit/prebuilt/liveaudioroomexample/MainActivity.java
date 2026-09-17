@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        long appID = ;
-        String appSign = "";
+        long appID = 841480413L;
+        String appSign ""2832e4bf7a15a84e96924d717ce5154b692ff2026c57b93f5018cdc03263bb0e
 
         String userID = generateUserID();
         String userName = userID + "_Name";
